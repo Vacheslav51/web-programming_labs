@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    
 }
 
 header {
@@ -10,11 +11,13 @@ header {
 
 
 main {
-    background-color: rgb(178, 243, 243);
+
 }
 
 footer {
     padding: 10px;
+    background-color: aqua;
+    height: 200px;
     
 }
 
@@ -24,14 +27,10 @@ a{
     text-decoration: none;
 }
 
-div:hover {
+a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(146, 154, 233);
+    text-shadow: 50%;
     transition: 0.3s 110ms;
-}
-
-a:visited {
-    background-color: blue;
 }
 
 a:active {
