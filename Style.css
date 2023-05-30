@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    background-image: url(fon.jpg);
+    background-size:cover;
+}
+
+
+main {
+    background-color: rgb(178, 243, 243);
+}
+
+footer {
+    padding: 10px;
+    
+}
+
+a{
+    color: rgb(0, 0, 0);
+    transition: 4s 0s;
+    text-decoration: none;
+}
+
+div:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(146, 154, 233);
+    transition: 0.3s 110ms;
+}
+
+a:visited {
+    background-color: blue;
+}
+
+a:active {
+    color: pink;
+}
