@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    height: 100%;
     
 }
 
@@ -17,6 +18,9 @@ main {
 footer {
     padding: 10px;
     background-color: aqua;
+    
+    
+    
 }
 
 a{

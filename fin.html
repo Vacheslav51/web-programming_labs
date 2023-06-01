@@ -7,7 +7,48 @@
     <title>INARCTICA</title>
     <link rel="stylesheet" href="Style.css">
     <script>
-        
+        function min_max() {
+            let b = Math.min(613, 615, 611, 627, 637, 622.5, 616, 606, 609.5, 608,
+                    607.5, 610.5, 611, 607.5, 608, 606.5, 606, 606, 604, 602.5);
+            let a = Math.max(613, 615, 611, 627, 637, 622.5, 616, 606, 609.5, 608,
+                607.5, 610.5, 611, 607.5, 608, 606.5, 606, 606, 604, 602.5);
+            document.getElementById("min").innerHTML = b;
+            document.getElementById("max").innerHTML = a;
+        } 
+        function Srcvadrat() {
+            let a = [613, 615, 611, 627, 637, 622.5, 616, 606, 609.5, 608,
+                    607.5, 610.5, 611, 607.5, 608, 606.5, 606, 606, 604, 602.5];
+            let sum = 0;
+            a.forEach(x => {
+                sum += x;
+            })
+            sum = sum/20;
+
+            let a2 = [];
+            for(let i = 0; i < a.length; i++) {
+                a2.push(a[i] - sum);
+                
+            }
+            let a3 = [];
+            for(let i = 0; i < a2.length; i++) {
+                a3.push(a2[i]);
+                
+            } 
+
+            a2 = a2.map(el => el **2);
+
+            let dis = 0;
+            a2.forEach(x => {
+                dis += x;
+            })
+
+
+             let src = Math.sqrt (dis)
+           
+            document.getElementById("srCvad").innerHTML = src;
+
+        }
+
     </script>
 
     <style>
@@ -30,11 +71,21 @@
           font-size: 100px;
           position: relative;
         }
+
+        .div2 {
+          width: 270px;
+          height:50px;
+          background-color: rgb(70, 179, 230);
+          position: absolute;
+          border-radius: 20px;
+          text-align: center;
+          font-size: 30px;
+        }
     </style>
 
 </head>
 
-<body>
+<body onload="Srcvadrat(),min_max()">
     <header>
         <img src ="inarctica.jpg" height="100">
         <div class="div" style="bottom: 75px; left:300px"> <a href="company.html"> О компании </a>  </div> 
@@ -44,102 +95,116 @@
         <div class="div3"> Финансовые показатели</div>
      </header>
 
- <main>
-    <table border="1" width="35%">
-        <tr>
-            <td><b> Дата в апрале</b></td>
-            <td> <b> цена закрытия</b></td>
-            
-        </tr>
-        <tr>
-            <td> 3</td>
-            <td> 613</td>
+    <main>
+        <div style="position: absolute; left: 280px; bottom: 14cm;"> Цена акций в апреле</div>
+        <table border="1" width="35%" style="position: relative; margin: 20px; text-align: center; ">
+            <tr>
+                <td><b> Дата в апрале</b></td>
+                <td> <b> цена закрытия</b></td>
+                
+            </tr>
+            <tr>
+                <td> 3</td>
+                <td> 613</td>
 
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>615</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>615</td>
 
-        </tr>
-        <tr>
-            <td>5 </td>
-            <td>611</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>627</td>
-        </tr>
-        <tr>
-            <td>7 </td>
-            <td>637</td>
-        </tr>
-        <tr>
-            <td>10 </td>
-            <td>622.5</td>
-        </tr>
-        <tr>
-            <td>11 </td>
-            <td>616</td>
-        </tr>
-        <tr>
-            <td>12 </td>
-            <td>606</td>
-        </tr>
-        <tr>
-            <td>13 </td>
-            <td>609.5</td>
-        </tr>
-        <tr>
-            <td>14 </td>
-            <td>608</td>
-        </tr>
-        <tr>
-            <td>17 </td>
-            <td>607.5</td>
-        </tr>
-        <tr>
-            <td>18 </td>
-            <td>610.5</td>
-        </tr>
-        <tr>
-            <td>19 </td>
-            <td>611</td>
-        </tr>
-        <tr>
-            <td>20 </td>
-            <td>607.5</td>
-        </tr>
-        <tr>
-            <td>21 </td>
-            <td>608</td>
-        </tr>
-        <tr>
-            <td>24 </td>
-            <td>606.5</td>
-        </tr>
-        <tr>
-            <td>25 </td>
-            <td>606</td>
-        </tr>
-        <tr>
-            <td>26 </td>
-            <td>606</td>
-        </tr>
-        <tr>
-            <td>27 </td>
-            <td>604</td>
-        </tr>
-        <tr>
-            <td>28</td>
-            <td>602.5</td>
-        </tr>
- </main>
+            </tr>
+            <tr>
+                <td>5 </td>
+                <td>611</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>627</td>
+            </tr>
+            <tr>
+                <td>7 </td>
+                <td>637</td>
+            </tr>
+            <tr>
+                <td>10 </td>
+                <td>622.5</td>
+            </tr>
+            <tr>
+                <td>11 </td>
+                <td>616</td>
+            </tr>
+            <tr>
+                <td>12 </td>
+                <td>606</td>
+            </tr>
+            <tr>
+                <td>13 </td>
+                <td>609.5</td>
+            </tr>
+            <tr>
+                <td>14 </td>
+                <td>608</td>
+            </tr>
+            <tr>
+                <td>17 </td>
+                <td>607.5</td>
+            </tr>
+            <tr>
+                <td>18 </td>
+                <td>610.5</td>
+            </tr>
+            <tr>
+                <td>19 </td>
+                <td>611</td>
+            </tr>
+            <tr>
+                <td>20 </td>
+                <td>607.5</td>
+            </tr>
+            <tr>
+                <td>21 </td>
+                <td>608</td>
+            </tr>
+            <tr>
+                <td>24 </td>
+                <td>606.5</td>
+            </tr>
+            <tr>
+                <td>25 </td>
+                <td>606</td>
+            </tr>
+            <tr>
+                <td>26 </td>
+                <td>606</td>
+            </tr>
+            <tr>
+                <td>27 </td>
+                <td>604</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>602.5</td>
+            </tr>
+            <div id="min" class="div2" style="left: 30cm; bottom: 13cm;"></div>
+            <div id="max" class="div2" style="left: 25cm; bottom: 9cm;"></div>
+            <div id="srCvad" class="div2" style="left: 30cm; bottom: 5cm;"></div>
 
+            <div style="position: absolute; left: 31cm; bottom: 14.5cm;"> Минимальная цена акций</div>
+            <div style="position: absolute; left: 26cm; bottom: 10.5cm"> Максимальная цена акций</div>
+            <div style="position: absolute; left: 30.5cm; bottom: 6.5cm"> <b><i>среднеквадратическое отклонение</b></i></div>
 
- <footer>
+            <div style="position: absolute; left: 40cm; bottom: 6.5cm"> <img src="rib.jpg" height="200"> </div>
 
- </footer>
+            <div class="div2" style="left: 20cm; bottom: 13cm; font-size: medium;"> Общее число акций на конец апреля: 86.768.819</div>
+            <div class="div2" style="left: 20cm; bottom: 5cm; font-size: 18px;"> Капитализация: 52 550 236 102 ₽</div>
+        
+        </main>
 
+    <footer style="position: absolute; bottom: 0;  width:1900px">
+        
+    </footer>
+ 
 </body>
 
 </html>
+
