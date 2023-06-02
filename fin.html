@@ -57,6 +57,7 @@
           border-radius: 20px;
           border: 20px;
           background-color: aqua;
+          color: black;
           width: 250px;
           height: 20px;
           margin: 15px;
@@ -81,6 +82,22 @@
           text-align: center;
           font-size: 30px;
         }
+
+        td {
+            background-color: rgb(145, 231, 231);
+        }
+
+        .divC {
+            background-color: rgb(20, 223, 223);
+            color: black;
+            border-radius: 70%;
+            text-align: center;
+            line-height: 20px;
+            border: 8px solid #099bdf;
+            line-height: 20px;
+            box-shadow: 2px 2px 4px #0703f7;
+            position: absolute;
+        }
     </style>
 
 </head>
@@ -89,15 +106,16 @@
     <header>
         <img src ="inarctica.jpg" height="100">
         <div class="div" style="bottom: 75px; left:300px"> <a href="company.html"> О компании </a>  </div> 
-        <div class="div" style="bottom: 110px; left:580px; background-color: blue;"> <a href="fin.html"> Основные финансовые показатели </a> </div>
+        <div class="div" style="bottom: 110px; left:580px; background-color: blue; color: rgb(245, 14, 14);"> <a href="fin.html"> Основные финансовые показатели </a> </div>
         <div class="div" style="bottom: 145px; left:860px"> <a href="contackt.html">Контактные данные </a> </div> 
         <div class="div" style="bottom: 180px; left:1140px"> <a href="vidio.html">Видео </a> </div> 
         <div class="div3"> Финансовые показатели</div>
      </header>
 
     <main>
-        <div style="position: absolute; left: 280px; bottom: 14cm;"> Цена акций в апреле</div>
-        <table border="1" width="35%" style="position: relative; margin: 20px; text-align: center; ">
+        
+        <table border="2" width="35%" style="position: relative; margin: 20px; text-align: center; ">
+            <caption>Цена акций в апреле</caption>
             <tr>
                 <td><b> Дата в апрале</b></td>
                 <td> <b> цена закрытия</b></td>
@@ -197,11 +215,30 @@
 
             <div class="div2" style="left: 20cm; bottom: 13cm; font-size: medium;"> Общее число акций на конец апреля: 86.768.819</div>
             <div class="div2" style="left: 20cm; bottom: 5cm; font-size: 18px;"> Капитализация: 52 550 236 102 ₽</div>
-        
+            
+            <div class="divC" 
+            style="width: 125px; height: 80px; left: 36cm; top:11cm"> 
+            <span style="position: relative; top:16px">Обпузыриться как много! </span>
+            </div>
+
+            <div class="divC"
+            style="width: 100px; height: 60px; left: 37cm; top:13cm"> 
+
+            </div>
+
+            <div class="divC"
+            style="width: 75px; height: 40px; left: 38cm; top:14.5cm">  
+
+            </div>
+
+            <div class="divC"
+            style="width: 50px; height: 20px; left: 39cm; top:16cm"> 
+
+            </div>
         </main>
 
-    <footer style="position: absolute; bottom: 0;  width:1900px">
-        
+    <footer style="position: absolute; bottom: -3cm;  width:1900px">
+        &copy; ООО"INARCTICA" 2023
     </footer>
  
 </body>

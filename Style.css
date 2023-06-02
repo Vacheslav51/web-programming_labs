@@ -5,36 +5,17 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 0px;
     background-image: url(fon.jpg);
-    background-size:cover;
-}
-
-
-main {
-
+    
 }
 
 footer {
     padding: 10px;
-    background-color: aqua;
-    
-    
-    
-}
-
-a{
-    color: rgb(0, 0, 0);
-    transition: 4s 0s;
-    text-decoration: none;
+    background:linear-gradient(to right top, rgb(35, 152, 182), rgb(0, 102, 255), rgb(11, 70, 199), rgb(6, 9, 207));
+   text-align: center;
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
-    text-shadow: 50%;
-    transition: 0.3s 110ms;
-}
-
-a:active {
-    color: pink;
+    color: red;
 }
